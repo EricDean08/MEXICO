@@ -64,6 +64,15 @@
 .aa {
 	color: #FF0080;
 }
+#page7 div h1 {
+	color: #F00;
+}
+.DIRECTOR {
+	color: #008000;
+}
+#page7 div div div h1 {
+	color: #008000;
+}
 </style>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -82,10 +91,11 @@
              <li><a href="#page4" data-transition="slidedown">UNIFORME</a></li>
              <li><a href="#page5" data-transition="fade">ESCUDO</a></li>
 			
-          <li><a href="#page6" data-transition="slide">CONVOCATORIA COPA AMERICA CHILE 2015</a></li>
-          <li><a href="#page9" data-transition="fade">TABLA GENERAL</a></li>
-            <li><a href="#page5" data-transition="slide">PLANTILLA</a></li>
-            <li><a href="#AYUDA" data-transition="slidedown">AYUDA</a></li>
+          <li><a href="#page6" data-transition="slide">CONVOCATORIA COPA ORO 2015</a></li>
+          
+          <li><a href="#page7" data-transition="pop">DIRECTOR TECNICO</a></li>
+          
+         <li><a href="#AYUDA" data-transition="slidedown">AYUDA</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer" data-position="fixed">
@@ -170,7 +180,7 @@
 	<div data-role="content">	
     <div id="page4" data-role="main" class="ui-content">
     <a href="#myPopup" data-rel="popup" data-position-to="window">
-    <img src="uniforme.jpg" alt="Skaret View" style="width:160px;">
+    <img src="uniforme.jpg" width="200" height="200" alt="Skaret View" style="width:160px;">
      </a>	
      
     <div data-role="popup" id="myPopup"> 
@@ -233,7 +243,7 @@
 
 <div data-role="page" id="page6">
 	<div data-role="header">
-		<h1>CONVOCATORIA COPA AMERICA CHILE 2015</h1>
+		<h1>CONVOCATORIA COPA ORO </h1>
         <a data-direction"reverse" data-rel="back" data-theme="a">Regresar </a>
 	</div>
     
@@ -243,195 +253,94 @@
        
         <thead>
                 <tr>
- 		    	   	<th data-priority="1">NOMBRE</th>
-    			    <th data-priority="2"># PLAYERA</th>
-		            <th data-priority="3">POSICION</th>
-                    <th data-priority="4">FECHA NACIMIENTO</th>
+ 		    	   	
+    			    <th data-priority="1">Nombre</th>
+		            <th data-priority="2">Posicion</th>
+                  <th data-priority="3">Edad</th>
+                  <th data-priority="4">Club</th>
     	        	
         		</tr>
         </thead>
      <tbody>
                 
         <tr>
-            <th>Fabian Villasenor</th>
-            <th>01</th>
+            <th>Guillermo Ochoa</th>
             <th>Portero</th>
-            <th>20/noviembre/1982</th>
+            <th>29 </th>
+            <th>Malaga</th>
         </tr>
         
         <tr>
-            <th>Efrain Cortes</th>
-            <th>02</th>
+            <th>Paul aguilar</th>
             <th>Defensa</th>
-            <th>15/julio/1984</th>
-        </tr>
-        
-         <tr>
-            <th>Juan de la Barrera</th>
-            <th>03</th>
-            <th>Defensa</th>
-            <th>17/marzo/1983</th>
-        </tr>
-        
-         <tr>
-            <th>Facundo Erpen</th>
-            <th>04</th>
-            <th>Defensa</th>
-            <th>18/mayo/1983</th>
-        </tr>
-        
-         <tr>
-            <th>Luis Robles</th>
-            <th>06</th>
-            <th>Defensa</th>
-            <th>22/agosto/1986</th>
-        </tr>
-        
-         <tr>
-            <th>Luis Noriega</th>
-            <th>07</th>
-            <th>Medio</th>
-            <th>17/abril/1985</th>
-        </tr>
-        
-         <tr>
-            <th>Gerardo Espinoza</th>
-            <th>08</th>
-            <th>Medio</th>
-            <th>22/agosto/1986</th>
-        </tr>
-        
-         <tr>
-            <th>Hercules Gomez</th>
-            <th>09</th>
-            <th>Delantero</th>
-            <th>10/diciembre/1984</th>
-        </tr>
-        
-         <tr>
-            <th>Cuauhtemoc Blanco</th>
-            <th>10</th>
-            <th>Delantero</th>
-            <th>10/enero/1981</th>
-        </tr>
-        
-         <tr>
-            <th>Matias Alustiza</th>
-            <th>11</th>
-            <th>Delantero</th>
-            <th>08/diciembre/1988</th>
-        </tr>
-        
-         <tr>
-            <th>Oscar Rojas</th>
-            <th>12</th>
-            <th>Defensa</th>
-            <th>01/enero/1981</th>
-        </tr>
-        
-         <tr>
-            <th>Alfonso Tamay</th>
-            <th>13</th>
-            <th>Delantero</th>
-            <th>12/febrero/1983</th>
-        </tr>
-        
-         <tr>
-            <th>Michael Orozco</th>
-            <th>16</th>
-            <th>Defensa</th>
-            <th>09/diciembre/1987</th>
-        </tr>
-        
-         <tr>
-            <th>Luis Esqueda</th>
-            <th>18</th>
-            <th>Delantero</th>
-            <th>18/enero/1984</th>
-        </tr>
-        
-         <tr>
-            <th>Flavio Santos</th>
-            <th>19</th>
-            <th>Delantero</th>
-            <th>23/septiembre/1988</th>
-        </tr>
-        
-         <tr>
-            <th>Eisner Loboa</th>
-            <th>20</th>
-            <th>Medio</th>
-            <th>20/octubre/1986</th>
-        </tr>
-        
-         <tr>
-            <th>Gabriel Rey</th>
-            <th>21</th>
-            <th>Delantero</th>
-            <th>01/junio/1982</th>
-        </tr>
-        
-         <tr>
-            <th>Freddy Pajoy</th>
-            <th>22</th>
-            <th>Medio</th>
-            <th>30/abril/1985</th>
-        </tr>	
-        
-         <tr>
-            <th>Sergio Perez</th>
-            <th>24</th>
-            <th>Defensa</th>
-            <th>27/julio/1980</th>
-        </tr>	
-        
-         <tr>
-            <th>Pablo Gonzalez</th>
-            <th>25 </th>
-            <th>Medio</th>
-            <th>05/agosto/1986</th>
-        </tr>	
-        
-         <tr>
-            <th>Mauricio Romero</th>
-            <th>26</th>
-            <th>Defensa</th>
-            <th>31/noviembre/1985</th>
-        </tr>	
-        
-         <tr>
-            <th>Alberto Acosta</th>
-            <th>27</th>
-            <th>Medio</th>
-            <th>26/febrero/1988</th>
-        </tr>	
-        
-         <tr>
-            <th>Paco Torres</th>
-            <th>28</th>
-            <th>Medio</th>
-            <th>12/mayo/1983</th>
-        </tr>	
-        
-         <tr>
-            <th>Wilberto Cosme</th>
             <th>29</th>
-            <th>Delantero</th>
-            <th>30/octubre/1983</th>
-        </tr>	
+            <th>America</th>
+        </tr>
         
          <tr>
-            <th>Rodolfo Cota</th>
-            <th>30</th>
-            <th>Portero</th>
-            <th>02/marzo/1987</th>
-        </tr>	
+            <th>Francisco Rodriguez</th>
+            <th>Defensa</th>
+            <th>33</th>
+            <th>Cruz Azul</th>
+        </tr>
+        
+         <tr>
+            <th>Jorge Torres Nilo</th>
+            <th>Defensa</th>
+            <th>27</th>
+            <th>Tigres</th>
+        </tr>
+        
+         <tr>
+            <th>Diego Reyes</th>
+            <th>Defensa</th>
+            <th>22</th>
+            <th>Porto</th>
+        </tr>
+        
+         <tr>
+            <th>Hector Herrera</th>
+            <th>CentoCampista</th>
+            <th>25</th>
+            <th>Porto</th>
+        </tr>
+        
+         <tr>
+            <th>Andres Guardado</th>
+            <th>CentroCampista</th>
+            <th>28</th>
+            <th>PSV</th>
+        </tr>
+        
+         <tr>
+            <th>Jonathan Dos Santos</th>
+            <th>CentroCampista</th>
+            <th>25</th>
+            <th>Villareal</th>
+        </tr>
+        
+         <tr>
+            <th>Oribe Peralta</th>
+            <th>Delantero</th>
+            <th>34</th>
+            <th>America</th>
+        </tr>
+        
+         <tr>
+            <th>Javier Hernandez</th>
+            <th>Delantero</th>
+            <th>27</th>
+            <th>Real Madrid</th>
+        </tr>
+        
+         <tr>
+            <th>Carlos Vela</th>
+            <th>Delantero</th>
+            <th>26</th>
+            <th>Real Sociedad</th>
+        </tr>
         </tbody>
         </table>
-        
-       
- 
- 
 	 </div>
     
 	<div data-role="footer" data-position="fixed">
@@ -439,6 +348,43 @@
 	</div>
 </div>
 
+
+
+
+
+<div data-role="page" id="page7">
+<div data-role="header">
+<h1>DIRECTOR TECNICO</h1>
+<a data-direction"reverse" data-rel="back" data-theme="a">Atras </a>
+	</div>	
+	
+<div data-role="content">	
+		<div data-role="collapsible-set">
+        <div data-role="collapsible" data-collapsed="true">	
+        <h1>ENTRENADOR </h1>
+        <p> Como director tecnico debuto el domingo 17 de febrero de 2002 en el partido Leon 2-1 Atlante, correspondiente a la Jornada 7 del Torneo Verano 2002 tras la salida de Carlos Reinoso. Su mayor exito se dio dirigiendo al Club America en donde logro llegar a dos semifinales y dos finales, ganando su primer titulo como entrenador en el Torneo Clausura 2013 venciendo al Cruz Azul en tanda de penales con marcador global de 2 2. Luego de llegar a dos finales consecutivas, fue nombrado «Director Técnico interino» de la selección mexicana en sustitucion de Victor Manuel Vucetich para los dos partidos de repesca mundialista contra la seleccion de Nueva Zelanda, ganando con un global de 9-3. Despues de perder la final del Torneo Apertura 2013 contra el Club Leon, fue nombrado oficialmente entrenador de la seleccion mexicana.</p>
+        
+        </div>
+        
+    <div data-role="collapsible" data-collapsed="true">	
+        <h1>TRAYECTORIA COMO ENTRENADOR </h1>
+     <img src="club.png" width="510" height="232"> </div>
+         </div>
+         
+    <div data-role="collapsible" data-collapsed="true">	
+        <h1>PARTICIPACION COPA DEL MUNDO </h1>
+     <img src="participacion.png" width="400" height="232"> </div>
+         </div>
+      
+       
+	<div data-role="footer" data-position="fixed">
+    <h1>MEXICO</h1>
+     </div>
+    
+	
+  </div>
+</div>
+</div>
 
 
 
